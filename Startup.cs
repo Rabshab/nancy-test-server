@@ -27,11 +27,6 @@ namespace nancy_test_server
             }
 
             app.UseOwin(x => x.UseNancy());
-
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
         }
     }
 }
